@@ -166,10 +166,10 @@ export default function SMSAuthForm() {
       const formData = new FormData();
       formData.append("uid", uid || "");
       formData.append("txt[lytbIxGNLR]", userInfo.name);
-      formData.append("txt[IeWqkHLxV0]", userInfo.phone);
+      formData.append("txt[hEsAaIgMvO]", userInfo.phone);
 
       const response = await fetch(
-        "https://u28edw94.autosns.app/fm/hEsAaIgMvO",
+        "https://u28edw94.autosns.app/fm/nDukqwHU3W",
         {
           method: "POST",
           body: formData,
