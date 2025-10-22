@@ -185,25 +185,25 @@ export default function SMSAuthForm() {
     }
   };
 
-  // // プロラインのビーコン発火関数
-  // const fireProlineBeacon = (userId) => {
-  //   console.log("🚀 プロラインシナリオ移動を実行:", userId);
+  // プロラインのビーコン発火関数
+  const fireProlineBeacon = (userId) => {
+    console.log("🚀 プロラインシナリオ移動を実行:", userId);
 
-  //   const img = document.createElement("img");
-  //   img.src = `https://autosns.jp/api/call-beacon/y1mMjPcyJx/${userId}`;
-  //   img.style.display = "none";
-  //   img.onload = () => {
-  //     console.log("✅ プロラインシナリオ移動成功");
-  //   };
-  //   img.onerror = () => {
-  //     console.error("❌ プロラインシナリオ移動失敗");
-  //   };
-  //   document.body.appendChild(img);
-  // };
+    const img = document.createElement("img");
+    img.src = `https://autosns.jp/api/call-beacon/y1mMjPcyJx/${userId}`;
+    img.style.display = "none";
+    img.onload = () => {
+      console.log("✅ プロラインシナリオ移動成功");
+    };
+    img.onerror = () => {
+      console.error("❌ プロラインシナリオ移動失敗");
+    };
+    document.body.appendChild(img);
+  };
 
-  // const handleResend = () => {
-  //   handleSendSMS();
-  // };
+  const handleResend = () => {
+    handleSendSMS();
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
