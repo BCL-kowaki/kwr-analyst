@@ -313,7 +313,7 @@ export default function SMSAuthForm() {
                         placeholder="例）09012345678"
                       />
                       <p className="mt-1 text-xs text-gray-500">
-                        ハイフンなしでご入力ください。
+                        ※ハイフンなしでご入力ください。
                       </p>
                     </div>
 
